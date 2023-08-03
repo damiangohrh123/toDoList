@@ -1,0 +1,66 @@
+:root {
+  --font-color: rgb(30, 32, 41);
+  --default-color: rgb(13, 100, 230);
+  --card: rgb(245, 245, 245);
+  --border-color: rgb(66, 57, 46);
+  --background: rgb(228, 222, 208);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'baseFont';
+  src: url('../assets/fonts/Lato-Regular.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'boldFont';
+  src: url('../assets/fonts/Lato-Black.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h2 {
+  font-family: 'boldFont';
+  color: var(--font-color);
+}
+
+h3 {
+  font-family: 'boldFont';
+  color: var(--font-color);
+  font-size: 1.2rem;
+}
+
+h4 {
+  font-family: 'boldFont';
+  color: var(--font-color);
+}
+
+p {
+  font-family: 'baseFont';
+  color: var(--font-color);
+  font-size: 1rem;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+
+  background-image: url('../assets/images/background.png');
+  background-size: cover;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 250px 5fr 5fr 1fr;
+  grid-template-rows: 1fr 8fr;
+
+  height: 100vh;
+}
+

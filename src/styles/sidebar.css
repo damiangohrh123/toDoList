@@ -1,0 +1,51 @@
+.sidebarContainer {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  padding: 25px;
+  background-color: white;
+}
+
+.profileContainer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profileContainer img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid var(--font-color);
+}
+
+.taskList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.taskListBtn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.taskListBtn img {
+  width: 30px;
+  height: 30px;
+
+  filter: invert(20%);
+}
+
+.taskListBtn button {
+  background: none;
+  border: none;
+
+  font-family: 'baseFont';
+  font-size: 1.25rem;
+  color: var(--font-color);
+}
