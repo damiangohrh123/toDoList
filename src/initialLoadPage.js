@@ -15,7 +15,7 @@ const initialLoadPage = () => {
   sidebar();
   header();
   newTask();
-  renderTasks();
+  renderTasks('today');
 }
 
 export default initialLoadPage;

@@ -1,9 +1,11 @@
 import Plus from './assets/images/plus.svg';
-import tasks from './tasks.js';
+
+import tasks from './renderTasks.js';
+import {setCurrentPage, getCurrentPage} from './globalVariables.js';
 
 const newTask = () => {
   //Create the tasks functions as reference
-  const { tasksArray, tasksContainer, renderTasks } = tasks();
+  const { tasksArray, renderTasks } = tasks();
 
   const content = document.querySelector('.content');
 
@@ -63,19 +65,22 @@ const newTask = () => {
     form.addEventListener('submit', (event) => {
       event.preventDefault();
 
+        //Create reference for current page
+        let currentPage = getCurrentPage();
+
       const titleValue = titleInput.value.trim();
       const dateValue = dateInput.value.trim();
 
       if (titleValue !== '') {
         const taskData = {
+          id: '',
           title: titleValue,
           date: dateValue,
           isChecked: false
         }
         tasksArray.push(taskData);
         form.remove();
-        renderTasks();
-        console.log(tasksArray);
+        renderTasks(currentPage);
       }
       else {
         alert(`Task name can't be empty`);

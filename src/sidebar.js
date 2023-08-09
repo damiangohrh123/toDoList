@@ -75,10 +75,10 @@ const sidebar = () => {
   const btnToday = createTaskListBtn('Today', TodayIcon, 'today' );
   taskList.appendChild(btnToday);
   //Create This Week button
-  const btnThisWeek = createTaskListBtn('This Week', ThisWeekIcon, 'this week');
+  const btnThisWeek = createTaskListBtn('This Week', ThisWeekIcon, 'thisWeek');
   taskList.appendChild(btnThisWeek);
   //Create This Month button
-  const btnThisMonth = createTaskListBtn('This Month', ThisMonthIcon, 'this month');
+  const btnThisMonth = createTaskListBtn('This Month', ThisMonthIcon, 'thisMonth');
   taskList.appendChild(btnThisMonth);
   //Create All button
   const btnAll = createTaskListBtn('All', AllIcon, 'all');

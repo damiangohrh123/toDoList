@@ -24,10 +24,10 @@ const header = () => {
       const formattedDate = currentDate.toLocaleDateString(undefined, options);
       headerTitle.textContent = `Today - ${formattedDate}`;
     break;
-    case 'this week':
+    case 'thisWeek':
       headerTitle.textContent = 'This Week';
     break;
-    case 'this month':
+    case 'thisMonth':
       headerTitle.textContent = 'This Month';
     break;
     case 'all':
